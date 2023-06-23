@@ -1,10 +1,65 @@
-/* *{
+/* Project One Page
+Author  : Muhammed Sayrac
+Date    : 22/June/2023
+Version : v.1
+*/
 
-} */
 
-/*  html{} */
+/* ################################## */
+/* Root */
+
+
+
+/* ################################## */
+/* Common Property */
+
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+
+
+}
+
+
 
 body {  
     font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
     
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+   list-style-type: none; 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.fSize1{
+    font-size: 1rem; /* 15*1 */
+}
+
+.fSize2{
+    font-size: 2rem; /* 15*1 */
+}
+
+.fSize3{
+    font-size: 3rem; /* 15*1 */
+}
+
+.fSize4{
+    font-size: 4rem; /* 15*1 */
 }
