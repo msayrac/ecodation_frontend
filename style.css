@@ -20,7 +20,7 @@ Version : v.1
 }
 
 html{
-    font-size: 15px;
+    font-size: 20px;
 
 
 }
@@ -30,6 +30,7 @@ html{
 body {  
     font-family: 'Manrope', sans-serif;
     line-height: 1.2;
+    position: relative;
     
 }
 
@@ -41,11 +42,31 @@ ul{
    list-style-type: none; 
 }
 
+i{
+    font-size:1.5rem;
+}
+
 img{
     max-width: 100%;
     height: auto;
+   
+
 }
 
+img:hover{
+    opacity:0.6;
+    box-shadow: 1px 1px 4px 1px red;
+    transition: 3s all;
+    cursor: pointer;
+    
+
+}
+
+.my_clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
 
 
 .fSize1{
@@ -62,4 +83,40 @@ img{
 
 .fSize4{
     font-size: 4rem; /* 15*1 */
+}
+
+
+/* Line-clamp  */
+.line-clamp5{
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;   
+}
+
+.line-clamp8{
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;   
+}
+
+.line-clamp10{
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;   
+}
+
+
+/* Header  */
+
+header{
+    background-image: url("./img/backgroundHeader.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0% 0%;
+    z-index:-1;
+    height: 80vh;
+    padding-top:4rem;
 }
