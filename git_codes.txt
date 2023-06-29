@@ -33,6 +33,11 @@ git checkout commitID
 git clone URL
 
 
+git branch -M main / hangi branch de oldugunu goruyor
+git branch -v 
+git branch backend // backend branch e gecis yapıyor
+git branch -D devops // devops branch ı silmek icin
+
 
 
 
