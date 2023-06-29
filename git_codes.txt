@@ -13,8 +13,10 @@ git commit -m "second commit"
 git push
 
 git stash // acil işler geldiginde mevcut kodları stash ile save edilmesini saglamaktadır.
+git stash save "benim_stash // isim vermek istersek
 git stash list
-git stash pop
+git stash pop  / stash cagırıyor ve daha sonra siliyor
+git stash drop stash@{0} // kendimiz stash silmek icin
 
 
 
