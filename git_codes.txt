@@ -1,0 +1,35 @@
+ODEVLERI GITHUB GONDERME ADIMLARI
+
+git init
+git add . ya da dosyas ismi ornegin _1_1odev.txt gibi
+git commit -m "first "commit"
+git branch -M main
+git remote add origin111 URL hamitmızrak githab url si 
+git push -u origin111 main 
+
+
+git add. 
+git commit -m "second commit"
+git push
+
+CONFLICT OLDUGUNDA 
+
+git reset HEAD~1 // bir onceki commite gidiyor. ~1 anlamı
+git add.
+git commit -m "conflict sonrası"
+git push --force
+
+git status 
+git log
+git checkout commitID
+git clone URL
+
+
+
+
+
+
+
+
+
+
