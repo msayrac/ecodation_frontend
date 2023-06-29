@@ -12,6 +12,12 @@ git add.
 git commit -m "second commit"
 git push
 
+git stash // acil işler geldiginde mevcut kodları stash ile save edilmesini saglamaktadır.
+git stash list
+git stash pop
+
+
+
 CONFLICT OLDUGUNDA 
 
 git reset HEAD~1 // bir onceki commite gidiyor. ~1 anlamı

@@ -1,3 +1,0 @@
-acil iş kodları yazdıldı
-normalde yazılan işler stash yapılarak save edildi
-bu sekilde impportant work lara öncelik verilmiş oldu.
