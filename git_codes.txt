@@ -42,6 +42,8 @@ git branch -D devops // devops branch ı silmek icin
 git checkout backend // backend branch e gecis yapıyor
 git checkout main // main branch e gecis yapıyor
 
+git merge frontend
+git merge --no-ff frontend
 
 
 
