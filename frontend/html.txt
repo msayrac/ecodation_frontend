@@ -1,0 +1,1 @@
+frontend cileri yazdıgı kodlar bu klasorde takip ediliyor ilgili branch kullanılarak
