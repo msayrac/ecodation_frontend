@@ -32,12 +32,14 @@ git log
 git checkout commitID
 git clone URL
 
+NOT: branch oncesinde git add, git commit git push yapalım
+sonrasında branchleri acabiliriz
 
 git branch -M main / hangi branch de oldugunu goruyor
 git branch -v 
 git branch backend // backend branch e gecis yapıyor
 git branch -D devops // devops branch ı silmek icin
-
+git checkout frontend  // switched to frontend branch
 
 
 
