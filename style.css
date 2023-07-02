@@ -127,6 +127,13 @@ img:hover{
     overflow: hidden;   
 }
 
+.line-clamp20{
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;   
+}
+
 /* Navbar  */
 
 .dark_mode{
@@ -149,7 +156,7 @@ header{
 }
 
 
-/* Main  */
+/* Messages */
 
 #messages{
     margin-top:3rem;
@@ -160,6 +167,24 @@ header{
     color:blue;
     font-size: 5rem;
 }
+
+
+/* parallax */
+#parallax{
+    background-color:transparent;
+    background-image: url(./img/parallax.jpg);
+    background-size:cover;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#parallax h2,p{
+    color:white;
+}
+
 
 
 /* Footer */
