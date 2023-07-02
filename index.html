@@ -52,8 +52,6 @@
 
 
     <!--Start nav code-->
-
-
     <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
         <div class="container"> <!--"container-fluid"-->
             <a class="navbar-brand" href="#"><i class="fa-brands fa-blogger-b"></i></a>
@@ -78,7 +76,7 @@
                             <i class="fa-regular fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
                             <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -86,9 +84,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li> -->
+
                 </ul>
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -109,6 +105,57 @@
 
     <!--End nav code-->
 
+    <!-- Modal trigger button -->
+
+
+    <!-- Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form5Example1" class="form-control" />
+                            <label class="form-label" for="form5Example1">Name</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                            <label class="form-check-label" for="form5Example3">
+                                I have read and agree to the terms
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <!-- start header code  -->
     <header id="header_id">
 
@@ -124,32 +171,67 @@
     </header>
     <!-- end header code -->
 
+
     <!-- start main code  -->
     <main id="main_id">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus placeat cum atque recusandae temporibus quam architecto ullam, consequatur doloribus modi, nulla voluptates tempore et enim dolorum molestias ex, animi eum!
-        Sapiente quisquam asperiores ipsum voluptates amet dicta similique excepturi odio ad reiciendis? Blanditiis voluptates quas nulla voluptatibus vitae repellat cumque libero a alias voluptas, accusamus aliquam dolores quisquam ratione praesentium!
-        Fuga facere in necessitatibus unde exercitationem aut delectus eum optio? Velit ea quia, dolorem adipisci obcaecati recusandae distinctio at illo ipsa, repellat facilis! Cumque a animi laudantium sequi modi ullam!
-        Quasi itaque veniam ducimus quo id eligendi, blanditiis consectetur, iusto ab deleniti fugiat. Nobis, consequatur! Neque sint perferendis labore laborum! Dicta, quas deserunt porro odio aspernatur maxime sunt excepturi laboriosam?
-        Ipsa similique cum illum quidem nostrum voluptates, consectetur et quam in corporis ut dolore perferendis! Delectus ratione, molestiae hic vel possimus consequatur, amet exercitationem repudiandae, optio modi ullam atque quia.
-        Fuga incidunt esse quas, expedita maiores quam optio illum? Laudantium iusto eveniet, in error accusantium optio veritatis quam fugit quibusdam explicabo delectus eaque! Esse perferendis, ab nisi expedita sequi provident!
-        Quae, praesentium. Possimus aspernatur magnam pariatur nulla sunt delectus dignissimos minima odio modi explicabo non dicta, blanditiis facilis, tempore beatae quisquam architecto incidunt nisi? Labore in libero alias delectus? Optio!
-        Distinctio mollitia omnis eius aspernatur quaerat adipisci quam dolores eveniet odit nemo vitae, magnam expedita maiores quasi reiciendis beatae modi nisi repellendus numquam explicabo velit nam accusamus. Dolores, facere sapiente?
-        Sed repellendus earum exercitationem esse recusandae aut delectus excepturi maxime, voluptates amet natus placeat possimus atque nam facilis eaque. Voluptatem nulla ea voluptatum asperiores reiciendis maxime qui, dolorem pariatur tempore.
-        Debitis deleniti explicabo quas obcaecati veniam? Reprehenderit totam ex in temporibus aperiam laborum rem voluptas! Repellendus culpa officiis molestiae hic reiciendis, quasi officia soluta tempora recusandae saepe laborum maxime reprehenderit.</p>
+        <!-- section#messages>div>h2.text-center-uppercase{Çalışmalarımız}^div.container>div.text-center.row.col-12.col-md-4.col-xl-3>i+h4{HTML5}+p{lorem15}+button.btn.btn-primary{Daha fazla ...} -->
+        <section id="messages">
+            <div>
+                <h2 class="myHeading">Çalışmalarımız</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center row col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5</h4>
+                        <p class="line-clamp4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, aspernatur ex non minima cumque
+                            a?</p>
+                        <button class="btn btn-primary">Daha fazla ...</button>
+                    </div>
+
+                    <div class="text-center row col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-brands fa-css3 text-danger"></i>
+                        <h4>CSS3</h4>
+                        <p class="line-clamp4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, aspernatur ex non minima cumque
+                            a?</p>
+                        <button class="btn btn-primary">Daha fazla ...</button>
+                    </div>
+
+                    <div class="text-center row col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>Javascript</h4>
+                        <p class="line-clamp4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, aspernatur ex non minima cumque
+                            a?</p>
+                        <button class="btn btn-primary">Daha fazla ...</button>
+                    </div>
+
+                    <div class="text-center row col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-brands fa-react text-success"></i>
+                        <h4>React</h4>
+                        <p class="line-clamp4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, aspernatur ex non minima cumque
+                            a?</p>
+                        <button class="btn btn-primary">Daha fazla ...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
+
+
     <!-- end main code -->
 
 
     <!-- start footer code  -->
     <footer id="footer_id" class="bg-dark">
-        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar Saklıdır. Designed by msayrac</div>
+        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar Saklıdır.
+            Designed by msayrac</div>
 
     </footer>
     <!-- end footer code -->
 
-
+    <a href="#navbar_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up-long"></i></a>
 
     <!-- end code -->
 
