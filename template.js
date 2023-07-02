@@ -2,7 +2,7 @@
 // Dark Mode
 let darkMode = () => {
     //alert("Dark Mode");
-    window.document.classList.toggle("dark_mode")
+    document.body.classList.toggle("dark_mode")
 
 
 }
