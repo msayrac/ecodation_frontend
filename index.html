@@ -30,8 +30,15 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <!-- External CSS -->
 
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -68,23 +75,32 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            <i class="fa-regular fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+                </ul>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
                     </li>
                 </ul>
+
+
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama için..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama için..."
+                        aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button> <!--btn-outline-success-->
                 </form>
             </div>
@@ -110,13 +126,23 @@
 
     <!-- start main code  -->
     <main id="main_id">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum illo suscipit, laborum itaque non assumenda doloremque similique. Vero consectetur illo sunt facilis nemo, reiciendis ea, alias, accusamus praesentium distinctio quam?
+        Dolore distinctio quasi esse amet, debitis magni? Ullam modi expedita harum laborum fugit, optio, enim ducimus ipsam dolores assumenda explicabo unde delectus ipsa perferendis vero sequi asperiores placeat illum quo!
+        Nemo corrupti minus tempora, totam repudiandae placeat explicabo libero impedit nihil atque velit eos omnis minima sunt corporis odio deleniti, deserunt quasi, nam temporibus sint. Repellendus omnis molestiae sed hic!
+        Repellendus accusantium eligendi officiis nostrum nulla eaque obcaecati enim, excepturi aspernatur, cum quas aliquam perferendis cupiditate saepe, officia ex molestias veniam. Nemo neque repellat quod illum quaerat sequi velit? Harum.
+        Iusto ab iste praesentium illum et, fugit atque laborum recusandae incidunt cumque, excepturi enim quas! Asperiores, enim omnis quaerat repudiandae ipsum architecto expedita vitae? Iure quisquam labore cum mollitia facere.
+        Maxime laboriosam totam fugiat assumenda saepe sunt reprehenderit vero eum molestiae non asperiores nostrum ducimus et qui aliquid incidunt, id accusamus velit rerum in omnis veritatis itaque doloribus. Aspernatur, deleniti.
+        A at et fugit adipisci aspernatur, magni cupiditate, necessitatibus enim ullam itaque deleniti, facilis omnis praesentium possimus architecto libero sequi voluptatum. Praesentium recusandae unde expedita voluptatum libero cupiditate illum est!
+        Cumque quia autem expedita vel, dignissimos facere? Odio nesciunt qui, voluptatum mollitia sapiente dolores autem eos commodi quo possimus harum minus voluptatibus amet maiores velit veritatis dolorum dolore error tempore.</p>
 
 
     </main>
     <!-- end main code -->
 
+
     <!-- start footer code  -->
-    <footer id="footer_id">
+    <footer id="footer_id" class="bg-dark">
+        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar Saklıdır. Designed by msayrac</div>
 
     </footer>
     <!-- end footer code -->
