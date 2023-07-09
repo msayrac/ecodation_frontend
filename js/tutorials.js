@@ -1,69 +1,51 @@
 
-// // single commet
-// /*
-// multiple commnet
-// */
 
-// // console.log("loglama");
-// // console.warn("warn");
-// // console.error("error");
-// // console.info("infor"); 
-// // alert("pop-up bilgilendirme 1 ")
+// try catch
 
-// // window.alert("pop-up bilgilendirme 2");
+let tryCatchTuto =() => {
 
-// // window.document.writeln("Ekranda yazı");
+    try{
+        alertx("pop-pop");
 
-// // variable
+    } catch(error){
+        console.log("hata mesajı : " + error.message);
+        console.log("hata mesajı : " + error.name);
+        console.error(error);
 
-// var result = "Js ögreniyorum";
-// console.log(typeof result + " => " + result);
+    }
 
-// var result = 14.53;
-// console.log(typeof result + " => " + result);
+   
 
-// var result = true;
-// console.log(typeof result + " => " + result);
+    console.log("Son satir");
 
-// //Naming convention
+};
 
-// var $deneme44 ="JS Data";
+tryCatchTuto();
 
-// console.log($deneme44)
+// debug
+// 1 ile 10 dahil olmak üzere toplama iişlemini yapan algoritmayı yazınız
 
-// result2 = 56;
+const debugData =()=>{
 
-// var result2;
+    let sum= 0;
+    for (let i = 0; i <= 10; i++){
+        sum = sum+i
 
+    }
 
-// ////////////////////////////////
-// // operators
+    console.log("sum: " + sum)
 
-// // + - * /  **  %
-// // x++ x--  ++x --x  = == === != &&  ||
+};
 
-// var userData = Number(prompt("Lutfen sayı giriniz : "));
-
-// console.log(userData+45);
-
-// undifined
-//nan
-//isNaN
-//Infinity
-
-//Number
+debugData();
 
 
-//funtion
 
 
-function fonksiyon(soyadi){
-
-    return "deneme " + soyadi;
-}
-
-let result = fonksiyon("saayac");
-
-console.log(result);
 
 
+
+
+
+
+ 
