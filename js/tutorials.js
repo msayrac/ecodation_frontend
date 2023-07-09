@@ -51,18 +51,19 @@
 //isNaN
 //Infinity
 
-var result = "add"/4
+//Number
+
+
+//funtion
+
+
+function fonksiyon(soyadi){
+
+    return "deneme " + soyadi;
+}
+
+let result = fonksiyon("saayac");
+
 console.log(result);
-
-console.log(Math.PI)
-
-
-
-
-
-
-
-
-
 
 
