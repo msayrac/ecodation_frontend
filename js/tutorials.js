@@ -25,21 +25,62 @@ tryCatchTuto();
 // debug
 // 1 ile 10 dahil olmak üzere toplama iişlemini yapan algoritmayı yazınız
 
-const debugData =()=>{
+// let userInput = Number(prompt("Lütfen bir sayi giriniz"));
+// const debugData =()=>{
 
-    let sum= 0;
-    for (let i = 0; i <= 10; i++){
-        sum = sum+i
+//     let sum= 0;
+//     for (let i = 1; i <= userInput; i++){
+//         sum = sum+i
 
+//     }
+
+//     console.log("sum: " + sum)
+
+// };
+
+// debugData();
+
+
+//////////////////////////////////////////////////
+
+
+// 1<=userData<=50
+
+let sumExamplesData = ()=>{
+
+    let commonSum =0;
+    let oddSum = 0, oddCounter = 0, oddNumber=0;
+    let evenSum=0, evenCounter=0, evenNUmber=0;
+
+    //user data
+
+    let user = Number(prompt("Lütfen bitiş sayısınız giriniz."));
+
+    for (let i = 1; i < user; i++) {
+        if(user===44){
+            console.log("secret key number failed " + user);
+            break;
+        }
+
+        if(i===50){
+            console.log("en fazla 50 sayısına kadar hesaplanır " + user);
+            break;
+        }
+
+        if(i===7){
+            console.log("7 sayısının toplama !!! " + user);
+            continue;
+        }
+
+
+
+        
+        
     }
 
-    console.log("sum: " + sum)
+
 
 };
-
-debugData();
-
-
 
 
 
