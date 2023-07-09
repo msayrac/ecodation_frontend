@@ -2,19 +2,19 @@
 
 // try catch
 
-let tryCatchTuto =() => {
+let tryCatchTuto = () => {
 
-    try{
+    try {
         alertx("pop-pop");
 
-    } catch(error){
+    } catch (error) {
         console.log("hata mesajı : " + error.message);
         console.log("hata mesajı : " + error.name);
         console.error(error);
 
     }
 
-   
+
 
     console.log("Son satir");
 
@@ -46,42 +46,57 @@ tryCatchTuto();
 
 // 1<=userData<=50
 
-let sumExamplesData = ()=>{
+let sumExamplesData = () => {
 
-    let commonSum =0;
-    let oddSum = 0, oddCounter = 0, oddNumber=0;
-    let evenSum=0, evenCounter=0, evenNUmber=0;
+    let commonSum = 0;
+    let oddSum = 0, oddCounter = 0, oddNumber = 0;
+    let evenSum = 0, evenCounter = 0, evenNUmber = 0;
 
     //user data
 
     let user = Number(prompt("Lütfen bitiş sayısınız giriniz."));
 
-    for (let i = 1; i < user; i++) {
-        if(user===44){
+    for (let i = 1; i <= user; i++) {
+        if (user === 44) {
             console.log("secret key number failed " + user);
             break;
         }
 
-        if(i===50){
+        if (user === 50) {
             console.log("en fazla 50 sayısına kadar hesaplanır " + user);
             break;
         }
 
-        if(i===7){
+        if (user === 7) {
             console.log("7 sayısının toplama !!! " + user);
             continue;
         }
 
-
-
-        
-        
     }
 
+    for (let j = 1; j <= user; j++) {
+        if (j % 2 == 0) {
+            evenCounter++;
+            evenSum += j;
+        } else {
+            oddCounter++;
+            oddSum += j;
+
+        }
+
+        commonSum+=i;
+    }
+
+
+    console.log("Even number count " + evenCounter);
+    console.log("Even number summation " + evenSum);
+    console.log("odd number count " + oddCounter);
+    console.log("odd number summation " + oddSum);
 
 
 };
 
+sumExamplesData();
 
 
 
@@ -89,4 +104,4 @@ let sumExamplesData = ()=>{
 
 
 
- 
+
