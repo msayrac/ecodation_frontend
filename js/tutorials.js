@@ -1,22 +1,31 @@
-const birinci = () => {
+// const birinci = () => {
 
-    let user = Number(prompt("Lütfen sayi giriniz"));
+//     let user = Number(prompt("Lütfen sayi giriniz"));
 
-    return user;
+//     return user;
+// }
 
+// const ikinci = () => {
 
-}
-
-const ikinci = () => {
-
-    let data = birinci();
-    console.log(Math.sqrt(data));
-}
-
+//     let data = birinci();
+//     console.log(Math.sqrt(data));
+// }
+// ikinci();
 
 
-ikinci();
+// setTimeOut(), setInterval()
 
+setTimeout(function(){
+
+    console.log("SetTimeOut çalıştı");
+
+},2000)
+
+setInterval(function(){
+
+    console.log("SetInterval çalıstı");
+
+},3000)
 
 
 
