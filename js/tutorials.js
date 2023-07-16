@@ -29,19 +29,55 @@
 
 // callbackFunction
 
-const birinci = (data) => {
-    return Math.pow(2,data);
-    
+// const birinci = (data) => {
+//     return Math.pow(2,data);
+
+// };
+
+// const ikinci = (callbackFunction) => {
+
+//     let user = Number(prompt("Lutfen sayi giriniz..."));
+//     let data = callbackFunction(user);
+//     console.log(data);
+// }
+
+// ikinci(birinci);
+
+
+const promTutorials = () => {
+
+    // catch 1 tane olmak zorunda
+    let data = new Promise((resolve, reject) => { 
+        let status = 400;
+
+        if(status===200){
+            resolve("Çalıştı");
+        } else
+        reject("çalışmadı")
+    }).then(
+            () => { console.log("OLUMLU"); }
+        ).catch(
+            (err) => {console.error(err);}
+        );
 };
 
-const ikinci = (callbackFunction) => {
+promTutorials();
 
-    let user = Number(prompt("Lutfen sayi giriniz..."));
-    let data = callbackFunction(user);
-    console.log(data);
-}
 
-ikinci(birinci);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
