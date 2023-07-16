@@ -30,16 +30,18 @@
 // callbackFunction
 
 const birinci = (data) => {
-    console.log(Math.pow(2,data));
-    return user;
+    return Math.pow(2,data);
+    
 };
 
 const ikinci = (callbackFunction) => {
 
     let user = Number(prompt("Lutfen sayi giriniz..."));
-    callbackFunction(user);
+    let data = callbackFunction(user);
+    console.log(data);
 }
 
+ikinci(birinci);
 
 
 
