@@ -103,6 +103,36 @@ let arrResult = () => {
         document.write(`${index} ==> ${value} <br/>`);
 
     });
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+    document.write("Eleman sayısı : " + data.length)
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+    data.push("Eklendi")
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+    data.unshift("Basa eklendi");
+    document.write("Eleman sayısı : " + data.length)
+
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+
+    data.pop(); // sonran bır eleman cıkar
+
+    data.shift();
+
+
+
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+    data.forEach(function(value,index,array){
+
+        //document.write(index + " ==> "+ value + "<br/>");
+        document.write(`${index} ==> ${value} <br/>`);
+
+    });
+
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+    data.sort();
+    console.log(data)
+
+    data.reverse();
+    console.log(data)
 
 }
 
