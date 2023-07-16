@@ -95,11 +95,16 @@ let arrResult = () => {
         document.write(temp + " ")
     }
 
-};
+    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
 
-//for in
+    data.forEach(function(value,index,array){
 
+        //document.write(index + " ==> "+ value + "<br/>");
+        document.write(`${index} ==> ${value} <br/>`);
 
+    });
+
+}
 
 arrResult();
 
