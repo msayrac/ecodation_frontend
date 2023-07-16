@@ -15,17 +15,49 @@
 
 // setTimeOut(), setInterval()
 
-setTimeout(function(){
+// setTimeout(function(){
 
-    console.log("SetTimeOut çalıştı");
+//     console.log("SetTimeOut çalıştı");
 
-},2000)
+// },2000)
 
-setInterval(function(){
+// setInterval(function(){
 
-    console.log("SetInterval çalıstı");
+//     console.log("SetInterval çalıstı");
 
-},3000)
+// },3000)
+
+// callbackFunction
+
+const birinci = (data) => {
+    console.log(Math.pow(2,data));
+    return user;
+};
+
+const ikinci = (callbackFunction) => {
+
+    let user = Number(prompt("Lutfen sayi giriniz..."));
+    callbackFunction(user);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
