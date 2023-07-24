@@ -192,7 +192,27 @@ let objectTutorials =()=>{
     console.log(personObj);
 };
 
-objectTutorials();
+// objectTutorials();
+
+
+// object constructor
+
+let objectConstructor =()=>{
+
+    let personConstructor = function(name,surname){
+
+        this.name = name;
+        this.surname = surname;
+        console.log(this);
+
+    }
+
+    let personResult = new personConstructor("Hamit","Mızrak");
+    console.log(personResult.name);
+}
+
+objectConstructor();
+
 
 
 
