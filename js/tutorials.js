@@ -175,9 +175,24 @@ let callbackFunctionComputer = () =>{
 
 }
 
-callbackFunctionComputer();
+//callbackFunctionComputer();
 
 
+// object
+let objectTutorials =()=>{
+
+    const personObj ={
+        "name" : "Hamit",
+        "surname" : "Mızrak",
+        "number" :44,
+        "isLogin" : true,
+        "software" : ["Html5","css3","js"]
+    }
+
+    console.log(personObj);
+};
+
+objectTutorials();
 
 
 
