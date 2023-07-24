@@ -66,81 +66,100 @@
 
 // arrays
 
-let arr = () => {
-    const numbers = [1, 3, 5, "str", true,66,99,852,65];
-    return numbers;
+// let arr = () => {
+//     const numbers = [1, 3, 5, "str", true,66,99,852,65];
+//     return numbers;
 
-};
+// };
 
-arr()
+// arr()
 
 
-let arrResult = () => {
-    let data = arr();
-    console.log(data);
-    console.log(data[data.length - 1]);
-    //Iterative for loop
+// let arrResult = () => {
+//     let data = arr();
+//     console.log(data);
+//     console.log(data[data.length - 1]);
+//     //Iterative for loop
 
-    for (let i = 0; i < data.length; i++) {
-        document.write(data[i] + " ");
+//     for (let i = 0; i < data.length; i++) {
+//         document.write(data[i] + " ");
         
+//     }
+//     document.write("<br/>+++++++++++++++++++++++ <br/>")
+
+//     for(let temp in data){
+//         document.writeln(data[temp] + " ");
+//     }
+//     document.write("<br/>+++++++++++++++++++++++ <br/>")
+//     for(let temp of data){
+//         document.write(temp + " ")
+//     }
+
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+
+//     data.forEach(function(value,index,array){
+
+//         //document.write(index + " ==> "+ value + "<br/>");
+//         document.write(`${index} ==> ${value} <br/>`);
+
+//     });
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+//     document.write("Eleman sayısı : " + data.length)
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+//     data.push("Eklendi")
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+//     data.unshift("Basa eklendi");
+//     document.write("Eleman sayısı : " + data.length)
+
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+
+//     data.pop(); // sonran bır eleman cıkar
+
+//     data.shift();
+
+
+
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+//     data.forEach(function(value,index,array){
+
+//         //document.write(index + " ==> "+ value + "<br/>");
+//         document.write(`${index} ==> ${value} <br/>`);
+
+//     });
+
+//     document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
+//     data.sort();
+//     console.log(data)
+
+//     data.reverse();
+//     console.log(data)
+
+// }
+
+// arrResult();
+
+
+// callback - promise practice
+
+let callbackFunctionComputer = () =>{
+
+    const computerArray= [];
+    //{computerName: "callBack computer 1", price:100}
+
+    for (let i=0; i<5; i++){
+        let computerObject = {computerName :`computer ${i+1}`,
+        price:`${(i+1)*100}`}
+        computerArray.push(computerObject);
     }
-    document.write("<br/>+++++++++++++++++++++++ <br/>")
-
-    for(let temp in data){
-        document.writeln(data[temp] + " ");
-    }
-    document.write("<br/>+++++++++++++++++++++++ <br/>")
-    for(let temp of data){
-        document.write(temp + " ")
-    }
-
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-
-    data.forEach(function(value,index,array){
-
-        //document.write(index + " ==> "+ value + "<br/>");
-        document.write(`${index} ==> ${value} <br/>`);
-
-    });
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-    document.write("Eleman sayısı : " + data.length)
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-    data.push("Eklendi")
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-    data.unshift("Basa eklendi");
-    document.write("Eleman sayısı : " + data.length)
-
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-
-    data.pop(); // sonran bır eleman cıkar
-
-    data.shift();
+    console.log(computerArray);
 
 
 
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-    data.forEach(function(value,index,array){
-
-        //document.write(index + " ==> "+ value + "<br/>");
-        document.write(`${index} ==> ${value} <br/>`);
-
-    });
-
-    document.write("<br/>+FOREACH++++++++++++++++++++++ <br/>")
-    data.sort();
-    console.log(data)
-
-    data.reverse();
-    console.log(data)
 
 }
 
-arrResult();
 
-
-
-
+callbackFunctionComputer();
 
 
 
