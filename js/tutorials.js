@@ -153,11 +153,27 @@ let callbackFunctionComputer = () =>{
     }
     console.log(computerArray);
 
+    const arrayInComputerName = ()=>{
 
+        computerArray.map((temp)=>{
 
+            // console.log(`${temp.computerName}`);
+
+        });
+    }
+
+        arrayInComputerName();
+
+        // call back function price
+
+        const arrayInComputerObject =(obj, callBackFnc)=>{
+            computerArray.push(obj);
+            callBackFnc();
+        };
+
+        arrayInComputerObject({computerName:"computer 6", price:600},arrayInComputerName)
 
 }
-
 
 callbackFunctionComputer();
 
