@@ -83,7 +83,7 @@
 
 //     for (let i = 0; i < data.length; i++) {
 //         document.write(data[i] + " ");
-        
+
 //     }
 //     document.write("<br/>+++++++++++++++++++++++ <br/>")
 
@@ -141,37 +141,39 @@
 
 // callback - promise practice
 
-let callbackFunctionComputer = () =>{
+let callbackFunctionComputer = () => {
 
-    const computerArray= [];
+    const computerArray = [];
     //{computerName: "callBack computer 1", price:100}
 
-    for (let i=0; i<5; i++){
-        let computerObject = {computerName :`computer ${i+1}`,
-        price:`${(i+1)*100}`}
+    for (let i = 0; i < 5; i++) {
+        let computerObject = {
+            computerName: `computer ${i + 1}`,
+            price: `${(i + 1) * 100}`
+        }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
 
-    const arrayInComputerName = ()=>{
+    const arrayInComputerName = () => {
 
-        computerArray.map((temp)=>{
+        computerArray.map((temp) => {
 
             // console.log(`${temp.computerName}`);
 
         });
     }
 
-        arrayInComputerName();
+    arrayInComputerName();
 
-        // call back function price
+    // call back function price
 
-        const arrayInComputerObject =(obj, callBackFnc)=>{
-            computerArray.push(obj);
-            callBackFnc();
-        };
+    const arrayInComputerObject = (obj, callBackFnc) => {
+        computerArray.push(obj);
+        callBackFnc();
+    };
 
-        arrayInComputerObject({computerName:"computer 6", price:600},arrayInComputerName)
+    arrayInComputerObject({ computerName: "computer 6", price: 600 }, arrayInComputerName)
 
 }
 
@@ -179,14 +181,14 @@ let callbackFunctionComputer = () =>{
 
 
 // object
-let objectTutorials =()=>{
+let objectTutorials = () => {
 
-    const personObj ={
-        "name" : "Hamit",
-        "surname" : "Mızrak",
-        "number" :44,
-        "isLogin" : true,
-        "software" : ["Html5","css3","js"]
+    const personObj = {
+        "name": "Hamit",
+        "surname": "Mızrak",
+        "number": 44,
+        "isLogin": true,
+        "software": ["Html5", "css3", "js"]
     }
 
     console.log(personObj);
@@ -197,9 +199,9 @@ let objectTutorials =()=>{
 
 // object constructor
 
-let objectConstructor =()=>{
+let objectConstructor = () => {
 
-    let personConstructor = function(name,surname){
+    let personConstructor = function (name, surname) {
 
         this.name = name;
         this.surname = surname;
@@ -207,13 +209,39 @@ let objectConstructor =()=>{
 
     }
 
-    let personResult = new personConstructor("Hamit","Mızrak");
+    let personResult = new personConstructor("Hamit", "Mızrak");
     console.log(personResult.name);
 }
 
-objectConstructor();
+//objectConstructor();
+
+let noParameterCallAppliedBind = () => {
+
+    let funcitonOtherObject = () => {
+        document.writeln(`Parametresiz Function : ${this.adi}<br/>`)
+
+    }
+
+    let objectData = {
+        "adi": "Spora gidiyorum"
+    }
+
+    funcitonOtherObject.call(objectData);
+    funcitonOtherObject.apply(objectData);
+
+    let deneme = functionOtherObject.bind(objectData);
+    deneme();
+
+}
+
+//noParameterCallAppliedBind();
+
+let eventFunction = () => {
+
+    alert("Calistı");
 
 
+};
 
 
 
