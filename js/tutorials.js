@@ -246,25 +246,35 @@ let eventFunction = () => {
 let newDataDate = () => {
     let now = document.getElementById("text_data");
     //HTML
-    now.innerHTML ="<b><i><mark>"+new Date().getFullYear() +"</b></i></mark>";
+    now.innerHTML = "<b><i><mark>" + new Date().getFullYear() + "</b></i></mark>";
 
     //Text
-    now.innerText =`<b><i><mark> ${new Date().getFullYear()} </b></i></mark>`;
+    now.innerText = `<b><i><mark> ${new Date().getFullYear()} </b></i></mark>`;
 
 }
 
-domData2=()=>{
+domData2 = () => {
 
     //alert("Please");
 
-   // let domUserData =document.getElementById("dom_id").innerText="ID";
-    
-    let domUserData =document.getElementByClassName("dom_class")[0].innerText="Class Data";
-    
+    // let domUserData =document.getElementById("dom_id").innerText="ID";
 
-
+    let domUserData = document.getElementByClassName("dom_class")[0].innerText = "Class Data";
 
 };
+
+outSite=() => {
+
+//alert("Please");
+
+let userInformation = window.confirm("Farklı bir sayfaya gitmek istermisiniz ?")
+? window.location="https://www.google.com"
+:window.alert("Bu sayfada kalındı");
+
+};
+
+
+
 
 
 
