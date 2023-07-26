@@ -243,7 +243,18 @@ let eventFunction = () => {
 
 };
 
+let newDataDate = () => {
+    let now = document.getElementById("text_data");
+    //HTML
+    now.innerHTML ="<b><i><mark>"+new Date().getFullYear() +"</b></i></mark>";
 
+    //Text
+    now.innerText =`<b><i><mark> ${new Date().getFullYear()} </b></i></mark>`;
+
+
+
+
+}
 
 
 
