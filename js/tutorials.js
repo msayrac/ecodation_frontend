@@ -251,12 +251,20 @@ let newDataDate = () => {
     //Text
     now.innerText =`<b><i><mark> ${new Date().getFullYear()} </b></i></mark>`;
 
-
-
-
 }
 
+domData2=()=>{
 
+    //alert("Please");
+
+   // let domUserData =document.getElementById("dom_id").innerText="ID";
+    
+    let domUserData =document.getElementByClassName("dom_class")[0].innerText="Class Data";
+    
+
+
+
+};
 
 
 
